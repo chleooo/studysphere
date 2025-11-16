@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #FFFDF7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: F4F4F4;">
+         <padding>
+            <Insets left="15.0" top="13.0" />
+         </padding>
+         <children>
+            <AnchorPane prefHeight="82.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="67.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Logo_StudySphere-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="46.0" text="Academic Collaboration" textFill="#7a7272">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="25.0" text="StudySphere" textFill="#4c1f1f">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Line endX="101.80000305175781" layoutX="103.0" layoutY="88.0" opacity="0.8" startX="-118.5999984741211" style="-fx-stroke: #4c1f1f;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="104.0" prefWidth="206.0">
+               <children>
+                  <Label layoutX="52.0" layoutY="47.0" text="Information Technology - 2nd year" textFill="#7a7272">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="30.0" prefHeight="18.0" prefWidth="87.0" text="Chleo Monteza">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="97.29997253417969" endY="-7.62939453125E-6" layoutX="107.0" layoutY="90.0" opacity="0.8" startX="-122.19999694824219" startY="-7.62939453125E-6" style="-fx-stroke: #4c1f1f;" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="5.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Generic avatar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="278.0" prefWidth="221.0" spacing="18.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Study Feed">
+                     <padding>
+                        <Insets bottom="5.0" right="45.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 116.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button maxWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="190.0" style="-fx-background-color: #722F37; -fx-background-radius: 5;" text="Posts" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" right="80.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Rectangle 288.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Messages" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" right="55.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 80.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Notifications" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" right="35.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 119.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Profile" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" right="70.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 120@2x.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <AnchorPane prefHeight="210.0" prefWidth="127.0">
+               <children>
+                  <Line endX="97.29997253417969" endY="-7.62939453125E-6" layoutX="107.0" layoutY="144.0" opacity="0.8" startX="-122.19999694824219" startY="-7.62939453125E-6" style="-fx-stroke: #4c1f1f;" />
+                  <Button layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign out">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Rectangle 122.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="286.0" layoutY="96.0" prefHeight="461.0" prefWidth="642.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 4; -fx-border-radius: 4; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.2, 2, 2);">
+         <children>
+            <Label layoutX="40.0" layoutY="32.0" prefHeight="19.0" prefWidth="286.0" text="Share Your Study Needs or Offer Help ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="51.0" text="Connect with fellow students for collaborative learning  " textFill="#7a7272">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="82.0" prefHeight="19.0" prefWidth="286.0" text="Post Type">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="39.0" layoutY="110.0" mnemonicParsing="false" style="-fx-font-weight: bold;" text="I need help with a subject" />
+            <CheckBox layoutX="286.0" layoutY="110.0" mnemonicParsing="false" style="-fx-font-weight: bold;" text="I want to tutor/help others" />
+            <Label layoutX="40.0" layoutY="151.0" prefHeight="19.0" prefWidth="286.0" text="Subject">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="341.0" layoutY="151.0" prefHeight="19.0" prefWidth="286.0" text="Specific Topic">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="341.0" layoutY="170.0" prefHeight="27.0" prefWidth="258.0" promptText="e.g, Binary Trees, Calsulus Integration" />
+            <ComboBox layoutX="40.0" layoutY="170.0" prefHeight="27.0" prefWidth="258.0" promptText="Select a subject" />
+            <Label layoutX="40.0" layoutY="212.0" prefHeight="19.0" prefWidth="286.0" text="Description">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField layoutX="39.0" layoutY="231.0" prefHeight="67.0" prefWidth="563.0" promptText="Describe what you’re struggling with and what kind of help you need..." />
+            <Label layoutX="40.0" layoutY="308.0" prefHeight="19.0" prefWidth="286.0" text="Preferred Schedule">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="324.0" text="Connect with fellow students for collaborative learning  " textFill="#7a7272">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="40.0" layoutY="348.0" />
+            <DatePicker layoutX="225.0" layoutY="348.0" />
+            <DatePicker layoutX="414.0" layoutY="348.0" />
+            <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="40.0" layoutY="404.0" prefHeight="30.0" prefWidth="489.0" style="-fx-background-color: #722F37; -fx-background-radius: 5;" text="Post Study Request" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="BASELINE_CENTER" layoutX="542.0" layoutY="404.0" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 5;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="331.0" layoutY="40.0" text="Create New Post" textFill="#722f37">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="59.0" text="Share your study needs of offer help to fellow students" textFill="#7a7272">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="54.0" layoutX="277.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/Screenshot_2025-09-21_113226-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

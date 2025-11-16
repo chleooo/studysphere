@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentArea" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #FFFDF7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studysphere.studysphereNOTIFICATIONS">
+   <children>
+      <Line endX="-110.19999694824219" endY="212.800048828125" layoutX="331.0" layoutY="488.0" opacity="0.8" startX="-110.19999694824219" startY="-488.0" style="-fx-stroke: #4c1f1f;" />
+      <VBox prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: F4F4F4;">
+         <padding>
+            <Insets left="15.0" top="13.0" />
+         </padding>
+         <children>
+            <AnchorPane prefHeight="82.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="67.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Logo_StudySphere-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="46.0" text="Academic Collaboration" textFill="#7a7272">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="25.0" text="StudySphere" textFill="#4c1f1f">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Line endX="101.80000305175781" layoutX="103.0" layoutY="88.0" opacity="0.8" startX="-118.5999984741211" style="-fx-stroke: #4c1f1f;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="104.0" prefWidth="206.0">
+               <children>
+                  <Label layoutX="52.0" layoutY="47.0" text="Information Technology - 2nd year" textFill="#7a7272">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="30.0" prefHeight="18.0" prefWidth="87.0" text="Chloe Monteza">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="97.29997253417969" endY="-7.62939453125E-6" layoutX="107.0" layoutY="90.0" opacity="0.8" startX="-122.19999694824219" startY="-7.62939453125E-6" style="-fx-stroke: #4c1f1f;" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="5.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Generic avatar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="278.0" prefWidth="221.0" spacing="18.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Study Feed">
+                     <padding>
+                        <Insets bottom="5.0" right="45.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 116.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button maxWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="190.0" style="-fx-background-color: transparent; -fx-background-radius: 5;" text="Posts">
+                     <padding>
+                        <Insets bottom="5.0" right="80.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Rectangle 287.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Messages" textAlignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" right="55.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 80.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: #722F37;" text="Notifications" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" right="35.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 204.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-radius: 5; -fx-background-color: transparent;" text="Profile" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" right="70.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@images/Rectangle 120@2x.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <AnchorPane prefHeight="210.0" prefWidth="127.0" style="-fx-background-color: #F4F4F4;">
+               <children>
+                  <Line endX="97.29997253417969" endY="-7.62939453125E-6" layoutX="107.0" layoutY="144.0" opacity="0.8" startX="-122.19999694824219" startY="-7.62939453125E-6" style="-fx-stroke: #4c1f1f;" />
+                  <Button layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign out">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Rectangle 122.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="269.0" layoutY="58.0" prefHeight="354.0" prefWidth="388.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 4; -fx-border-radius: 4; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.2, 2, 2);">
+         <children>
+            <Label layoutX="44.0" layoutY="22.0" prefHeight="19.0" prefWidth="286.0" text="Notifications">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="7.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Rectangle 119.png" />
+               </image>
+            </ImageView>
+            <Line endX="234.0" endY="-7.62939453125E-6" layoutX="158.0" layoutY="60.0" opacity="0.8" startX="-158.00003051757812" startY="-1.52587890625E-5" strokeWidth="0.5" style="-fx-stroke: grey;" />
+            <Line endX="234.0" endY="-7.62939453125E-6" layoutX="158.0" layoutY="110.0" opacity="0.8" startX="-158.00003051757812" startY="-1.52587890625E-5" strokeWidth="0.5" style="-fx-stroke: grey;" />
+            <Line endX="234.0" endY="-7.62939453125E-6" layoutX="159.0" layoutY="160.0" opacity="0.8" startX="-158.00003051757812" startY="-1.52587890625E-5" strokeWidth="0.5" style="-fx-stroke: grey;" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="23.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ad.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="23.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/au'.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="70.0" text="New message">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="85.0" text="Angel Dadole sent you a message." textFill="#7a7272">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="118.0" text="2hrs ago" textFill="#7a7272">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="120.0" text="New comment on your post">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="70.0" text="48mins ago" textFill="#7a7272">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="135.0" text="Azzie Umbay comment on your Mathematics study request." textFill="#7a7272">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

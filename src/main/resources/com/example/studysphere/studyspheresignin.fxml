@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studysphere.studysphereSIGNIN">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #722F37;">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="226.0" layoutX="145.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Logo_StudySphere-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="105.0" layoutY="350.0" prefHeight="35.0" prefWidth="290.0" text="Welcome to StudySphere" textFill="#fffdf7">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="385.0" prefHeight="35.0" prefWidth="226.0" text="Connect with tutors and study partners" textFill="#fffdf7">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="500.0" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFFDF7;">
+         <children>
+            <AnchorPane layoutX="56.0" layoutY="163.0" prefHeight="374.0" prefWidth="388.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 4; -fx-border-radius: 4; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.2, 2, 2);">
+               <children>
+                  <Label layoutX="25.0" layoutY="26.0" prefHeight="19.0" prefWidth="64.0" text="Sign In" textFill="#722f37">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="54.0" prefHeight="14.0" prefWidth="268.0" text="Enter your credentials to access your account" textFill="#7a7272">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="97.0" prefHeight="19.0" prefWidth="38.0" text="Email">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailField" layoutX="25.0" layoutY="117.0" prefHeight="42.0" prefWidth="330.0" promptText="your.email@university.ph" />
+                  <Label layoutX="25.0" layoutY="176.0" prefHeight="19.0" prefWidth="64.0" text="Password">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signInBtn" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="35.0" prefWidth="330.0" style="-fx-background-color: #722f37;" text="Sign In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="98.0" layoutY="325.0" prefHeight="19.0" prefWidth="120.0" text="Don't have account?" textFill="#7a7272">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signinBtn" layoutX="218.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleSignUp" style="-fx-background-color: transparent;" text="Sign Up" textFill="#722f37" />
+                  <PasswordField fx:id="passwordField" layoutX="25.0" layoutY="195.0" prefHeight="42.0" prefWidth="330.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
