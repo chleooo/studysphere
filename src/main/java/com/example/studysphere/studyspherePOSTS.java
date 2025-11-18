@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import java.io.IOException;
 
 public class studyspherePOSTS {
 
@@ -40,7 +39,11 @@ public class studyspherePOSTS {
         loadPage("studysphereprofile.fxml");
     }
 
-    // SIGN OUT → go to Sign In
+    @FXML
+    public void openCreatePost() {
+        loadPage("studyspherenewpost.fxml");
+    }
+
     @FXML
     public void handleSignOut(ActionEvent event) {
         try {
@@ -53,10 +56,18 @@ public class studyspherePOSTS {
         }
     }
 
-    private void loadPage(String fxml) {
+    private void loadPage(String fxmlFile) {
         try {
-            Node page = FXMLLoader.load(getClass().getResource(fxml));
-            contentArea.getChildren().setAll(page);
+            Parent page = FXMLLoader.load(getClass().getResource(fxmlFile));
+            contentArea.getChildren().clear();
+            contentArea.getChildren().add(page);
+
+            // IMPORTANT: make loaded page fill entire content area
+            AnchorPane.setTopAnchor(page, 0.0);
+            AnchorPane.setBottomAnchor(page, 0.0);
+            AnchorPane.setLeftAnchor(page, 0.0);
+            AnchorPane.setRightAnchor(page, 0.0);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

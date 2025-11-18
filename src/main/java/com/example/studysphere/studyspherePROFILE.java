@@ -39,7 +39,17 @@ public class studyspherePROFILE {
         loadPage("studysphereprofile.fxml");
     }
 
-    // SIGN OUT → go to Sign In
+    @FXML
+    public void openCreatePost() {
+        loadPage("studyspherenewpost.fxml");
+    }
+
+
+    @FXML
+    public void openEditProfile() {
+        loadPage("studysphereregister.fxml");
+    }
+
     @FXML
     public void handleSignOut(ActionEvent event) {
         try {
@@ -52,10 +62,17 @@ public class studyspherePROFILE {
         }
     }
 
-    private void loadPage(String fxml) {
+    private void loadPage(String fxmlFile) {
         try {
-            Node page = FXMLLoader.load(getClass().getResource(fxml));
-            contentArea.getChildren().setAll(page);
+            Parent page = FXMLLoader.load(getClass().getResource(fxmlFile));
+            contentArea.getChildren().clear();
+            contentArea.getChildren().add(page);
+
+            AnchorPane.setTopAnchor(page, 0.0);
+            AnchorPane.setBottomAnchor(page, 0.0);
+            AnchorPane.setLeftAnchor(page, 0.0);
+            AnchorPane.setRightAnchor(page, 0.0);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

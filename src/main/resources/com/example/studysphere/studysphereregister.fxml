@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #FFFDF7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #FFFDF7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studysphere.studysphereREGISTER">
    <children>
       <AnchorPane layoutX="183.0" layoutY="84.0" prefHeight="531.0" prefWidth="634.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 4; -fx-border-radius: 4; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.2, 2, 2);">
          <children>
@@ -27,38 +27,38 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <TextField layoutX="26.0" layoutY="100.0" prefHeight="34.0" prefWidth="274.0" promptText="Enter your full name" />
+            <TextField fx:id="fullNameField" layoutX="26.0" layoutY="100.0" prefHeight="34.0" prefWidth="274.0" promptText="Enter your full name" />
             <Label layoutX="317.0" layoutY="81.0" prefHeight="19.0" prefWidth="42.0" text="Email">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <TextField layoutX="317.0" layoutY="100.0" prefHeight="34.0" prefWidth="294.0" promptText="your.email@university.ph" />
+            <TextField fx:id="emailField" layoutX="317.0" layoutY="100.0" prefHeight="34.0" prefWidth="294.0" promptText="your.email@university.ph" />
             <Label layoutX="26.0" layoutY="145.0" prefHeight="19.0" prefWidth="87.0" text="Course/Major">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <TextField layoutX="26.0" layoutY="164.0" prefHeight="34.0" prefWidth="274.0" promptText="eg., Computer Science" />
+            <TextField fx:id="courseField" layoutX="26.0" layoutY="164.0" prefHeight="34.0" prefWidth="274.0" promptText="eg., Computer Science" />
             <Label layoutX="315.0" layoutY="145.0" prefHeight="19.0" prefWidth="66.0" text="Year Level">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <ComboBox layoutX="317.0" layoutY="164.0" prefHeight="34.0" prefWidth="294.0" promptText="Select your year level" />
+            <ComboBox fx:id="yearLevelCombo" layoutX="317.0" layoutY="164.0" prefHeight="34.0" prefWidth="294.0" promptText="Select your year level" />
             <Label layoutX="26.0" layoutY="213.0" prefHeight="19.0" prefWidth="194.0" text="Subjects You Need Help With">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <ComboBox layoutX="25.0" layoutY="232.0" prefHeight="34.0" prefWidth="538.0" promptText="Select a subject/s" />
+            <ComboBox fx:id="subjectNeedCombo" layoutX="25.0" layoutY="232.0" prefHeight="34.0" prefWidth="538.0" promptText="Select a subject/s" />
             <Button layoutX="578.0" layoutY="232.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="33.0" style="-fx-background-color: #722F37;" text="+" textFill="WHITE" />
             <Label layoutX="26.0" layoutY="289.0" prefHeight="19.0" prefWidth="149.0" text="Subject You Can Tutor">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <ComboBox layoutX="25.0" layoutY="308.0" prefHeight="34.0" prefWidth="538.0" promptText="Select a subject/s you can teach" />
+            <ComboBox fx:id="subjectTutorCombo" layoutX="25.0" layoutY="308.0" prefHeight="34.0" prefWidth="538.0" promptText="Select a subject/s you can teach" />
             <Button layoutX="578.0" layoutY="308.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="33.0" style="-fx-background-color: #722F37;" text="+" textFill="WHITE" />
             <Label layoutX="26.0" layoutY="371.0" prefHeight="19.0" prefWidth="122.0" text="Available Schedule">
                <font>
@@ -70,14 +70,15 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <DatePicker fx:id="dateSelector" layoutX="25.0" layoutY="415.0" prefHeight="34.0" prefWidth="538.0" promptText="Select date" />
+            <DatePicker fx:id="availabilityDate" layoutX="25.0" layoutY="415.0" prefHeight="34.0" prefWidth="538.0" promptText="Select date" />
             <Button layoutX="578.0" layoutY="415.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="33.0" style="-fx-background-color: #722F37;" text="+" textFill="WHITE" />
-            <Button layoutX="24.0" layoutY="471.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="586.0" style="-fx-background-color: #722F37;" text="Complete Profile Setup" textFill="WHITE">
+            <Button fx:id="completeButton" layoutX="24.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleCompleteSetup" prefHeight="34.0" prefWidth="586.0" style="-fx-background-color: #722F37;" text="Complete Profile Setup" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
+      <Button fx:id="backButton" layoutX="130.0" layoutY="84.0" mnemonicParsing="false" onAction="#handleBack" style="-fx-background-color: transparent;" text="⬅" />
    </children>
 </AnchorPane>

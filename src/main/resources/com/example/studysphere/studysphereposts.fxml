@@ -247,7 +247,7 @@
         </content>
       </ScrollPane>
       <Line endX="488.0" layoutX="512.0" layoutY="75.0" opacity="0.8" startX="-292.0" startY="-7.62939453125E-6" style="-fx-stroke: #4c1f1f;" />
-      <Button layoutX="880.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: #722F37; -fx-background-radius: 7;" text="+ Create Post" textFill="WHITE">
+      <Button layoutX="880.0" layoutY="25.0" mnemonicParsing="false" onAction="#openCreatePost" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: #722F37; -fx-background-radius: 7;" text="+ Create Post" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

@@ -65,7 +65,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Button fx:id="signinBtn" layoutX="218.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleSignUp" style="-fx-background-color: transparent;" text="Sign Up" textFill="#722f37" />
+                  <Button fx:id="signinby" layoutX="218.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleSignUp" style="-fx-background-color: transparent;" text="Sign Up" textFill="#722f37" />
                   <PasswordField fx:id="passwordField" layoutX="25.0" layoutY="195.0" prefHeight="42.0" prefWidth="330.0" promptText="Password" />
                </children>
             </AnchorPane>

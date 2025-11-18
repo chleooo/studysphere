@@ -9,9 +9,8 @@ import javafx.scene.Node;
 import javafx.event.ActionEvent;
 import javafx.scene.Parent;
 
-public class studysphereSIGNUP {
+public class studysphereREGISTER {
 
-    @FXML private TextField fullNameField;
     @FXML private TextField emailField;
     @FXML private TextField courseField;
 
@@ -21,10 +20,7 @@ public class studysphereSIGNUP {
 
     @FXML private DatePicker availableDatePicker;
 
-    @FXML private Hyperlink signInLink;
-
-
-
+    // Runs automatically when FXML loads
     @FXML
     public void initialize() {
 
@@ -45,13 +41,13 @@ public class studysphereSIGNUP {
                 "Science, Technology, and Society",
                 "Ethics"
         );
-
     }
 
+    // COMPLETE SETUP → Go to profile.fxml
     @FXML
-    public void handleCreateAccount(ActionEvent event) {
+    public void handleCompleteSetup(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("studyspherestudyfeed.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("profile.fxml"));
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
@@ -61,10 +57,11 @@ public class studysphereSIGNUP {
         }
     }
 
+
     @FXML
-    public void goToSignIn(ActionEvent event) {
+    public void handleBack(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("studyspheresignin.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("studysphereprofile.fxml"));
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
